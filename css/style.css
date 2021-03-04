@@ -1,0 +1,695 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*=============== navbar start =====================*/
+
+nav {
+    background: #555;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+span {
+    color: #07947A;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #4ADFC4;
+    transition: .5s;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #47947A;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/*=============== navbar end ======================*/
+
+
+/* ============== Home Section Start=============== */
+
+.banner{
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background: #07947A;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+
+
+.man_image {
+    width: 400px;
+    height: 430px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -515px;
+    margin-right: 150px;
+}
+
+.content {
+    float: left;
+}
+
+.banner .icon{
+    width: 30%;
+    margin: auto;
+}
+.banner .icon i{
+    color: #209AED;
+}
+
+.banner .icon i.git{
+    color: #373737;
+}
+
+.hlw {
+    color: #28bba0;
+    margin-top: 160px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.hlw_1 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.hlw_2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.hlw_3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    font-weight: 500;
+    padding-right: 155px;
+    line-height: 26px;
+}
+
+button {
+    margin: 40px -60px 140px 100px;
+    background: #4ADFC4;
+    padding: 15px 70px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.button_1 {
+    margin-left: 100px;
+    background: #4ADFC4;
+    padding: 15px 70px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.fab,
+.far {
+    font-size: 40px;
+    margin: 10px;
+}
+
+
+/* ============== Home Section End=============== */
+
+
+/* ==============About Section Start============== */
+
+.ofc_img {
+    margin-left: 300px;
+    margin-top: 200px;
+    float: left;
+}
+
+.about {
+    margin-top: 200px;
+    float: right;
+}
+
+.about .abt {
+    color: #50E8C4;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.about h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.about p {
+    width: 440px;
+}
+
+/* ==============About Section End================ */
+
+
+/* ==============Service Section Start============= */
+
+#services .dev {
+    margin-top: 900px;
+    margin-left: 100px;
+}
+
+#services .dev .srv {
+    text-align: center;
+    color: #4adfc4;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+#services .dev .srvc {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#services .developer {
+    width: 350px;
+    background-color: #CFD9D7;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#services .developer h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#services .developer h3 {
+    font-size: 18px;
+}
+
+#services .database {
+    width: 350px;
+    background-color: #CFD9D7;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#services .database h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#services .database h3 {
+    font-size: 18px;
+}
+
+
+#services .java {
+    width: 350px;
+    background-color: #CFD9D7;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#services .java h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#services .java h3 {
+    font-size: 18px;
+}
+
+
+#services .ui {
+    width: 350px;
+    background-color: #CFD9D7;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#services .ui h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#services .ui h3 {
+    font-size: 18px;
+}
+
+
+#services .marketing {
+    width: 350px;
+    background-color: #CFD9D7;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#services .marketing h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#services .marketing h3 {
+    font-size: 18px;
+}
+
+
+#services .front {
+    width: 350px;
+    background-color: #CFD9D7;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+#services .front h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#services .front h3 {
+    font-size: 23px;
+}
+
+
+/* ==============Service Section End============= */
+
+
+/* ==============Education Section Start========= */
+#education .dev {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#education .secondary h2 {
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#education .dev .edcn {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#education .scndry {
+    width: 350px;
+    background-color: #edededed;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#education .scndry h1 {
+    padding: 20px 0;
+    text-align: center;
+    color: #07947a;
+    font-size: 28px;
+}
+
+#education .higher {
+    width: 350px;
+    background-color: #edededed;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#education .higher h1 {
+    padding: 20px 0;
+    text-align: center;
+    color: #07947a;
+    font-size: 30px;
+}
+
+#education .dip {
+    width: 350px;
+    background-color: #edededed;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#education .dip h1 {
+    padding: 20px 0;
+    text-align: center;
+    color: #07947a;
+    font-size: 30px;
+}
+
+#education .extra {
+    width: 350px;
+    background-color: #edededed;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#education .extra h1 {
+    padding: 20px 0;
+    text-align: center;
+    color: #07947a;
+    font-size: 30px;
+}
+
+/* ==============Education Section End=========== */
+
+
+/* ============== Project Section Start========== */
+#project {
+    margin-left: 100px;
+}
+
+#project .prct1 {
+    color: #07947A;
+    text-align: center;
+    margin: 100px 0 80px 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#project .para {
+    width: 1000px;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#project .img1 {
+    height: 250px;
+    width: 320px;
+    border-radius: 35px;
+}
+
+#project .img2 {
+    height: 250px;
+    width: 320px;
+    border-radius: 35px;
+}
+
+#project .img3 {
+    height: 250px;
+    width: 320px;
+    border-radius: 35px;
+}
+
+#project .circle1 {
+    border: 3px solid black;
+    background: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px 20px 0 500px;
+}
+
+#project .circle2 {
+    border: 3px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px 20px 0 25px;
+}
+
+#project .circle3 {
+    border: 3px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px 20px 0 25px;
+}
+
+.prjtc .pos{
+    float: left;
+    margin-right: 60px;
+}
+
+.prjtc .pos1{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+}
+
+.prjtc .Vehicle{
+    float: left;
+    margin-right: 60px;
+}
+
+.prjtc .Room{
+    float: left;
+}
+
+.prjtc .img1,
+.prjtc .img2,
+.prjtc .img3{
+    opacity: 0.5;
+}
+
+.icon_div{
+    background: #E5E5E5;
+    border-radius: 50px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon_div i{
+    font-size: 36px;
+}
+
+/* ============== Project Section End============ */
+
+
+/* ============== Contact Section Start========== */
+
+#contact {
+    margin-top: 100px;
+    text-align: center;
+    background: #f4f4f9;
+    padding: 30px 0 100px 0;
+}
+
+#contact h1 {
+    color: #07947a;
+    text-align: center;
+    margin: 180px 0 100px 0;
+    font-size: 35px;
+}
+
+#contact .form {
+    background: rgb(235, 229, 229);
+    padding: 30px 120px;
+    border-radius: 30px;
+    outline: none;
+    margin-right: 50px;
+    border: none;
+    font-size: 22px;
+}
+
+#contact .form1 {
+    background: rgb(235, 229, 229);
+    padding: 100px 250px;
+    border-radius: 80px;
+    outline: none;
+    margin-right: 40px;
+    margin-top: 60px;
+    border: none;
+    font-size: 30px;
+}
+
+#contact .button {
+    color: #fff;
+    background: #4adfc4;
+    border-radius: 30px;
+    padding: 10px 60px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* ============== Contact Section End============ */
+
+
+/* ============== Footer Section Start============ */
+
+#footer{
+    padding-bottom: 80px;
+}
+#footer .visit {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#footer .aazaf {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#footer .icons {
+    text-align: center;
+}
+
+#footer .icons i{
+    font-size: 22px;
+    color: #222;
+    display: inline-block;
+}
+
+/* ============== Footer Section End=============== */
